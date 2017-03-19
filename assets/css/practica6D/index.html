@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <title>LA PELOTA</title>
+
+    <link rel="stylesheet" href="http://karserver.duckdns.org/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="animate.css">
+
+    <link rel="stylesheet" type="text/css" href="http://karserver.duckdns.org/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="cercle.js"></script>
+    <script src="js.js"></script>
+
+
+</head>
+
+<body>
+
+
+<!--METIENDO CONTADOR SE GENERAN CIRCULOS MAS-->
+
+<div class="col-xs-8">
+    <div id="form" class="form-vertical form"><i class="fa fa-sitemap"><a href="../"><span> Volver a índice</span></a>
+    </i>
+        <legend><h2>Mis Pelotillas</h2>
+            <p>La pelota que se multiplica con alegria</p>
+            <span>Suma un numero de pelotas con un radio determinado a las que ya hay, cada pulsación añade el número nuevo de pelotillas al anterior colores aleatorios y transparencia aleatoria RGBA, las posiciones tasmbien son aleatorias en la pizarra y no salen del continente.</span>
+
+            <ul id="listaCirculos">
+
+            </ul>
+
+        </legend>
+        <button onclick="muestra('crearPelota');muestra('pizarra')" class="btn btn-block btn-success">Nueva Pelota
+        </button>
+        <div id="crearPelota" style="display: none;">
+            <div class="form-group">
+                <label for="cantidad">Radio</label>
+                <input class="col-sm-12" id="radio" type="number" min="1" max="500" placeholder="Radio">
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Sumando Randomize</label>
+                <input class="col-sm-12" id="cantidad" type="number" min="1" max="500" placeholder="Cantidad">
+                <button class="btn btn-block btn-default" onclick="randomCirculos()">Suma al Randomize</button>
+            </div>
+
+            <button class="btn btn-block btn-danger" onclick="location.reload()">Reload</button>
+        </div>
+    </div>
+    <div class="col-xs-8 pizarra" style="display:
+        none;" id="pizarra">
+    </div>
+</div>
+
+
+</body>
+</html>
