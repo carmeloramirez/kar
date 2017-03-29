@@ -323,7 +323,7 @@ iframe {
   margin-bottom: 30px;
 }
 .github-graph .js-calendar-graph-svg {
-  max-width: 100%;
+  max-width: 300px;
 }
 
 .ghfeed {
@@ -515,6 +515,11 @@ iframe {
   color: #fb866a;
 }
 /* Extra small devices (phones, less than 768px) */
+@media (max-width: 1200px) {
+  .calendar {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .header {
     text-align: center;
@@ -534,6 +539,7 @@ iframe {
   .project-image {
     margin-bottom: 15px;
   }
+
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
