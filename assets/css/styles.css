@@ -322,8 +322,9 @@ iframe {
 .github-graph {
   margin-bottom: 30px;
 }
-.github-graph .js-calendar-graph-svg {
-  max-width: 300px;
+
+.js-calendar-graph-svg svg {
+    width: 100% !important;
 }
 
 .ghfeed {
